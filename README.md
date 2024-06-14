@@ -32,8 +32,8 @@ Base URL /admin
 
 | HTTP Method | URI path       | Action                               |
 |-------------|----------------|--------------------------------------|
-| GET         | /userId        | User info                            |
-| PUT         | /userId        | Modify user info                     |
+| GET         | /adminId       | Admin info                           |
+| PUT         | /adminId       | Admin user info                      |
 
 # Candles Routes
 
