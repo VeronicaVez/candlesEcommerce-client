@@ -1,5 +1,10 @@
 # Hygge Lights
 
+Hygge Lights, an eCommerce platform for soy candles designed to bring relaxation and warmth to your home.
+
+**Technologies used**
+
+HTML, CSS, React.js, Bootstrap, Node.js, MongoDB, Express, Mongoose
 
 # Auth Routes
 
