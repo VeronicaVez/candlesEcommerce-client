@@ -26,15 +26,6 @@ Base URL /user
 | PUT         | /userId        | Modify user info                     |
 | DELETE      | /userId        | Delete user                          |
 
-# Admin Routes
-
-Base URL /admin
-
-| HTTP Method | URI path       | Action                               |
-|-------------|----------------|--------------------------------------|
-| GET         | /adminId       | Admin info                           |
-| PUT         | /adminId       | Admin user info                      |
-
 # Candles Routes
 
 Base URL /candles
