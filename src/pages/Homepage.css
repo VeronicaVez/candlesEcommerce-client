@@ -1,0 +1,72 @@
+.HomePage{
+    width: 100%;
+}
+
+.first-part{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #E7CBCB;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+}
+
+.left-pic{
+    box-shadow: rgba(153, 98, 122, 0.12) 0px 2px 4px 0px, rgba(153, 98, 122, 0.32) 0px 2px 16px 0px;
+    width:90%;
+    animation-duration: 0.8s;
+    animation-name: slidein-left;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right h1{
+    font-size:4rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom:-10px;
+    font-weight: 400;
+}
+
+.right-pic{
+    box-shadow: rgba(153, 98, 122, 0.12) 0px 2px 4px 0px, rgba(153, 98, 122, 0.32) 0px 2px 16px 0px;
+    width: 90%;
+    animation-duration: 0.8s;
+    animation-name: slidein-right;
+}
+
+.subtitle-homepage{
+    font-size: 2.5rem;
+    font-family: "Dancing Script", cursive;
+    color: #99627A;
+    }
+
+        @keyframes slidein-right {
+            from {
+                margin-left: 30%;
+                width: 90%;
+            }
+    
+            to {
+                margin-left: 0%;
+                width: 90%;
+            }
+        }
+
+        @keyframes slidein-left {
+            from {
+                margin-right: 30%;
+                width: 90%;
+            }
+                
+            to {
+                margin-right: 0%;
+                width: 90%;
+                }
+        }
