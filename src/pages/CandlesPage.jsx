@@ -1,4 +1,5 @@
 import CandleCard from "./../components/CandleCard"
+import { Container } from "react-bootstrap"
 
 const CandlesPage = () => {
   return (

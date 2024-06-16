@@ -84,11 +84,12 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding:30px;
 }
 
 .handmade-pic{
-    padding: 30px;
-    width:50%
+    width:80%;
+    box-shadow: rgba(153, 98, 122, 0.12) 0px 2px 4px 0px, rgba(153, 98, 122, 0.32) 0px 2px 16px 0px;
 }
 
 .svg-hover:hover{

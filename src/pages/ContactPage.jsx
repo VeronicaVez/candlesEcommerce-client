@@ -1,7 +1,7 @@
 function ContactPage() {
   return (
     <div className="ContactPage">
-      <h1> get in touch</h1>
+      <h1>Get in touch</h1>
       <p>form + google maps</p>
       <p>
         img + info Address Location : 15051 E Alameda Pkwy, Aurora, CO 80012,
