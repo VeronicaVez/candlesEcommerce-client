@@ -118,7 +118,7 @@ function Homepage() {
         <h2>Products</h2>
       </section>
       <section className="fourth-part">
-        <article>
+        <article className="delivery">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             shape-rendering="geometricPrecision"
@@ -139,7 +139,7 @@ function Homepage() {
             <p>Return to 7 days.</p>
           </div>
         </article>
-        <article>
+        <article className="delivery">
           <svg
             version="1.1"
             id="Layer_1"
@@ -164,7 +164,7 @@ function Homepage() {
             <p>Orders over €80</p>
           </div>
         </article>
-        <article>
+        <article className="delivery">
           <svg
             id="Layer_1"
             data-name="Layer 1"
@@ -184,7 +184,7 @@ function Homepage() {
           </div>
         </article>
 
-        <article>
+        <article className="delivery">
           <svg
             version="1.1"
             id="Layer_1"

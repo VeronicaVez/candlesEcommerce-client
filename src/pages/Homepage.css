@@ -65,7 +65,7 @@
     font-size: 1.5rem;
     font-family: "Dancing Script", cursive;
     font-weight: 800;
-    color: #C88EA7;
+    color: #99627A;
 }
 
 .characteristics{
@@ -93,6 +93,26 @@
 
 .svg-hover:hover{
     fill:#99627A;
+}
+
+.third-part {
+    background-color:#E7CBCB
+}
+
+.delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.fourth-part h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #99627A;
+    margin-bottom: -10px;
 }
 
 @media screen and (min-width:992px){
@@ -130,6 +150,12 @@
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
+        }
+    
+    .fourth-part {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 }
 
