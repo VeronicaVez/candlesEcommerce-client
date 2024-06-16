@@ -1,8 +1,39 @@
-# React + Vite
+# Hygge Lights
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hygge Lights, an eCommerce platform for soy candles designed to bring relaxation and warmth to your home.
 
-Currently, two official plugins are available:
+**Technologies used**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+HTML, CSS, React.js, Bootstrap, Node.js, MongoDB, Express, Mongoose
+
+# Auth Routes
+
+Base URL /auth
+
+| HTTP Method | URI path       | Action                               |
+|-------------|----------------|--------------------------------------|
+| POST        | /signup        | Sign up                              |
+| POST        | /login         | Log In                               |
+| GET         | /verify        | Verify Auth token                    |
+
+# User Routes
+
+Base URL /user
+
+| HTTP Method | URI path       | Action                               |
+|-------------|----------------|--------------------------------------|
+| GET         | /userId        | User info                            |
+| PUT         | /userId        | Modify user info                     |
+| DELETE      | /userId        | Delete user                          |
+
+# Candles Routes
+
+Base URL /candles
+
+| HTTP Method | URI path       | Action                               |
+|-------------|----------------|--------------------------------------|
+| POST        | /              | Create product                       |
+| GET         | /              | Get all candles                      |
+| GET         | /candleId      | Get one candle info                  |
+| PUT         | /candleId      | Update one candle info               |
+| DELETE      | /candleId      | Delete a specific candle             |
