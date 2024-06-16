@@ -8,6 +8,7 @@
     align-items: flex-end;
     background-color: #E7CBCB;
     width: 100%;
+    padding-bottom: 30px;
 }
 
 .left {
@@ -18,7 +19,7 @@
 .left-pic{
     box-shadow: rgba(153, 98, 122, 0.12) 0px 2px 4px 0px, rgba(153, 98, 122, 0.32) 0px 2px 16px 0px;
     width:90%;
-    animation-duration: 0.8s;
+    animation-duration: 0.7s;
     animation-name: slidein-left;
 }
 
@@ -28,45 +29,142 @@
 }
 
 .right h1{
-    font-size:4rem;
+    font-size:2rem;
     font-family: "Roboto", sans-serif;
-    margin-bottom:-10px;
+    margin-bottom:-20px;
     font-weight: 400;
+    animation-duration: 0.7s;
+    animation-name: slideintext-right;
 }
 
 .right-pic{
     box-shadow: rgba(153, 98, 122, 0.12) 0px 2px 4px 0px, rgba(153, 98, 122, 0.32) 0px 2px 16px 0px;
-    width: 90%;
-    animation-duration: 0.8s;
+    width: 95%;
+    animation-duration: 0.7s;
     animation-name: slidein-right;
 }
 
 .subtitle-homepage{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-family: "Dancing Script", cursive;
     color: #99627A;
+    animation-duration: 0.7s;
+    animation-name: slideintext-right;
+    margin-bottom: 0px;
     }
 
-        @keyframes slidein-right {
-            from {
-                margin-left: 30%;
-                width: 90%;
-            }
-    
-            to {
-                margin-left: 0%;
-                width: 90%;
-            }
+.second-part h2{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #643843;
+    padding: 10px 20px;
+}
+
+.second-part h3 {
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: 800;
+    color: #C88EA7;
+}
+
+.characteristics{
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.info{
+    line-height: 1rem;
+    padding: 0px 20px;
+    color: #643843;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.handmade-pic{
+    padding: 30px;
+    width:50%
+}
+
+.svg-hover:hover{
+    fill:#99627A;
+}
+
+@media screen and (min-width:992px){
+    .right h1 {
+            font-size: 4rem;
+            margin-bottom: -30px;
         }
 
-        @keyframes slidein-left {
-            from {
-                margin-right: 30%;
-                width: 90%;
-            }
-                
-            to {
-                margin-right: 0%;
-                width: 90%;
-                }
+    .subtitle-homepage {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
+
+    .second-part{
+            padding: 0px 80px;
+        }
+
+    .second-part h2 {
+            font-size: 3rem;
+        }
+                
+    .second-part h3 {
+            font-size: 2rem;
+        }
+
+    .info {
+            padding: 0px 45px;
+        }
+
+    .second-part {
+            display: flex;
+        }
+
+    .img {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+}
+
+@keyframes slideintext-right {
+    from {
+        margin-left: 30%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slidein-right {
+    from {
+        margin-left: 30%;
+        width: 95%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 95%;
+    }
+}
+
+@keyframes slidein-left {
+    from {
+        margin-right: 30%;
+        width: 90%;
+    }
+
+    to {
+        margin-right: 0%;
+        width: 90%;
+    }
+}
