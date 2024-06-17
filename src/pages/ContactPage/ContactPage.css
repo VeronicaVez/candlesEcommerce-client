@@ -1,0 +1,48 @@
+.second-part{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+
+.shop-info-photo{
+    width:80%;
+    box-shadow: rgba(153, 98, 122, 0.12) 0px 2px 4px 0px, rgba(153, 98, 122, 0.32) 0px 2px 16px 0px;
+}
+
+.shop-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px
+}
+
+.shop-info p{
+    color: #643843;
+}
+
+.shop-info{
+    line-height: 1.2rem;
+}
+
+.icon-social-part svg{
+    padding: 0px 10px;
+}
+
+@media screen and (min-width:992px) {
+    .second-part {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .shop-info-photo {
+        width: 45%;
+    }
+
+    .shop-info p {
+        margin-top: -15px;
+    }
+}

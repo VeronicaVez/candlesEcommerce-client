@@ -2,13 +2,16 @@ import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import { Link } from "react-router-dom"
+import logo from "./../../images/logo-candles1.png"
 import "./Navbar.css"
 
 function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container className="NavBar">
-        <Navbar.Brand href="/">Hygge Lights</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img src={logo} alt="Logo" className="logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

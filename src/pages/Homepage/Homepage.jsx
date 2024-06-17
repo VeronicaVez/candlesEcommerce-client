@@ -1,6 +1,6 @@
-import leftPic from "./../images/candles-home.webp"
-import rightPic from "./../images/candles-relax.jpg"
-import handmade from "./../images/handmade-candles.webp"
+import leftPic from "./../../images/candles-home.webp"
+import rightPic from "./../../images/candles-relax.jpg"
+import handmade from "./../../images/handmade-candles.webp"
 import "./Homepage.css"
 
 function Homepage() {
@@ -127,8 +127,8 @@ function Homepage() {
             fillRule="evenodd"
             clipRule="evenodd"
             viewBox="0 0 505 511.9"
-            width="60"
-            height="60"
+            width="50"
+            height="50"
             fill="#C88EA7"
             className="svg-hover"
           >
@@ -146,8 +146,8 @@ function Homepage() {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 122.88 74.34"
-            width="60"
-            height="60"
+            width="50"
+            height="50"
             fill="#C88EA7"
             className="svg-hover"
           >
@@ -170,8 +170,8 @@ function Homepage() {
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 122.88 118.21"
-            width="60"
-            height="60"
+            width="50"
+            height="50"
             fill="#C88EA7"
             className="svg-hover"
           >
@@ -191,8 +191,8 @@ function Homepage() {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 111.811 122.88"
-            width="60"
-            height="60"
+            width="50"
+            height="50"
             fill="#C88EA7"
             className="svg-hover"
           >

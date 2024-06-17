@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10px;
+    padding: 0px 10px;
     background-color: #E7CBCB;
 }
 
@@ -26,4 +26,7 @@
     height:21px
 }
 
+.logo{
+    width:20%;
+}
 

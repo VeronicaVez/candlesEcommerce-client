@@ -1,4 +1,4 @@
-import CandleCard from "./../components/CandleCard"
+import CandleCard from "./../../components/CandleCard/CandleCard"
 import { Container } from "react-bootstrap"
 
 const CandlesPage = () => {
