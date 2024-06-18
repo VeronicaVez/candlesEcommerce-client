@@ -80,11 +80,11 @@
     color: #643843;
 }
 
-.img{
+.img-handmade{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding:30px;
+    padding: 10px;
 }
 
 .handmade-pic{
@@ -128,7 +128,7 @@
         }
 
     .second-part{
-            padding: 0px 80px;
+            padding: 20px 40px;
         }
 
     .second-part h2 {
@@ -140,14 +140,10 @@
         }
 
     .info {
-            padding: 0px 45px;
+            padding: 0px 40px;
         }
 
-    .second-part {
-            display: flex;
-        }
-
-    .img {
+    .img-handmade {
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;

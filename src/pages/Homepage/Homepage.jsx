@@ -1,6 +1,6 @@
 import leftPic from "./../../images/candles-home.webp"
 import rightPic from "./../../images/candles-relax.jpg"
-import handmade from "./../../images/handmade-candles.webp"
+import handmade from "./../../images/handmade-candes.jpeg"
 import "./Homepage.css"
 
 function Homepage() {
@@ -110,7 +110,7 @@ function Homepage() {
             </div>
           </article>
         </div>
-        <div className="img">
+        <div className="img-handmade">
           <img src={handmade} alt="handmade-candles" className="handmade-pic" />
         </div>
       </section>

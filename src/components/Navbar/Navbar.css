@@ -2,14 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px;
+    padding: 10px 20px;
     background-color: #E7CBCB;
 }
 
 .NavBar a {
     display: inline-flex;
     text-decoration: none;
-    padding: 20px 20px;
     font-size: 1.4rem;
     color:#643843;
     font-weight: 500;
@@ -27,6 +26,15 @@
 }
 
 .logo{
-    width:20%;
+    width:40%;
 }
 
+@media screen and (min-width:992px) {
+    .logo {
+        width: 15%;
+    }
+
+    .NavBar a {
+        padding: 0px 20px;
+    }
+}
