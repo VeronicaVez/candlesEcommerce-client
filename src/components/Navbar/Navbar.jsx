@@ -1,4 +1,3 @@
-import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import { Link } from "react-router-dom"
@@ -7,25 +6,36 @@ import "./Navbar.css"
 import { useContext } from "react"
 import { AuthContext } from "./../../context/auth.context"
 import LoginModal from "./../LoginModal/LoginModal"
+import { useState } from "react"
+import Offcanvas from "react-bootstrap/Offcanvas"
 
 function NavBar() {
   const { isLoggedIn, user } = useContext(AuthContext)
+  const [showOffcanvas, setShowOffcanvas] = useState(false)
+
+  const handleOffcanvasClose = () => setShowOffcanvas(false)
+
+  const expand = "md"
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container className="NavBar">
-        <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" className="logo" />
-        </Navbar.Brand>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+    <Navbar expand="md" className="NavBar">
+      <Link to={"/"}>
+        <img src={logo} alt="Logo" className="logo" />
+      </Link>
+      <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+      <Navbar.Offcanvas
+        id={`offcanvasNavbar-expand-${expand}`}
+        aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+        placement="end"
+      >
+        <Offcanvas.Body className="modal-menu" placement="end">
+          <Nav>
             <Nav.Link as={Link} to="/candles">
               Candles
             </Nav.Link>
             <Nav.Link as={Link} to="/contact">
               Contact
             </Nav.Link>
-
             {!isLoggedIn && (
               <>
                 <LoginModal />
@@ -65,8 +75,8 @@ function NavBar() {
               </>
             )}
           </Nav>
-        </Navbar.Collapse>
-      </Container>
+        </Offcanvas.Body>
+      </Navbar.Offcanvas>
     </Navbar>
   )
 }

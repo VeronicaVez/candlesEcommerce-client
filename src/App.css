@@ -1,5 +1,6 @@
 .App{
-  margin: -10px -8px;
+  margin: -10px 0px;
   color: #643843;
   font-family: "Lato", sans-serif;
+  width: 100%
 }
