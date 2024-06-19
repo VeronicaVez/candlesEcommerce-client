@@ -5,6 +5,7 @@ import Row from "react-bootstrap/esm/Row"
 import Button from "react-bootstrap/Button"
 import { useNavigate } from "react-router-dom"
 import authServices from "./../../../services/auth.services"
+import "./SignUpForm.css"
 
 function SignupForm() {
   const [signupData, setSignupData] = useState({
@@ -42,8 +43,9 @@ function SignupForm() {
   return (
     <div className="SignupForm">
       <Form onSubmit={handleSignupSubmit}>
+        <h2>Sign up here</h2>
         <Form.Group className="mb-3">
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label className="signup-label">Email Address</Form.Label>
           <Form.Control
             type="email"
             id="inputEmail"
@@ -51,7 +53,7 @@ function SignupForm() {
             name="email"
             onChange={handleInputChange}
           />
-          <Form.Label>Password</Form.Label>
+          <Form.Label className="signup-label">Password</Form.Label>
           <Form.Control
             type="password"
             id="inputPassword"
@@ -59,7 +61,9 @@ function SignupForm() {
             name="password"
             onChange={handleInputChange}
           />
-          <Button type="submit">Login</Button>
+          <Button type="submit" className="signup-button">
+            Sign up
+          </Button>
         </Form.Group>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </Form>

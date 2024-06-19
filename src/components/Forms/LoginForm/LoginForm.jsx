@@ -1,11 +1,10 @@
 import { useContext, useState } from "react"
 import Form from "react-bootstrap/Form"
-import Col from "react-bootstrap/esm/Col"
-import Row from "react-bootstrap/esm/Row"
 import Button from "react-bootstrap/Button"
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { AuthContext } from "./../../../context/auth.context"
 import authServices from "./../../../services/auth.services"
+import "./LoginForm.css"
 
 function LoginForm() {
   const [loginData, setLoginData] = useState({
@@ -47,7 +46,7 @@ function LoginForm() {
     <div className="LoginForm">
       <Form onSubmit={handleLoginSubmit}>
         <Form.Group className="mb-3">
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label className="login-label">Email Address</Form.Label>
           <Form.Control
             type="email"
             id="inputEmail"
@@ -55,7 +54,7 @@ function LoginForm() {
             name="email"
             onChange={handleInputChange}
           />
-          <Form.Label>Password</Form.Label>
+          <Form.Label className="login-label">Password</Form.Label>
           <Form.Control
             type="password"
             id="inputPassword"
@@ -63,20 +62,12 @@ function LoginForm() {
             name="password"
             onChange={handleInputChange}
           />
-          <Button type="submit">Login</Button>
+          <Button type="submit" className="login-button">
+            Login
+          </Button>
         </Form.Group>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </Form>
-      <Row>
-        <Col>
-          <p>
-            Don't have an account yet? No worries,
-            <Link to={"/signup"} className="Link">
-              sign up here!
-            </Link>
-          </p>
-        </Col>
-      </Row>
     </div>
   )
 }

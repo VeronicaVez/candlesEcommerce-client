@@ -1,6 +1,10 @@
 import LoginForm from "./../../components/Forms/LoginForm/LoginForm.jsx"
 import { Button, Modal } from "react-bootstrap"
 import { useState } from "react"
+import Col from "react-bootstrap/esm/Col"
+import Row from "react-bootstrap/esm/Row"
+import { Link } from "react-router-dom"
+import "./LoginModal.css"
 
 function LoginModal() {
   const [show, setShow] = useState(false)
@@ -13,7 +17,7 @@ function LoginModal() {
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="20"
-          fill="#E7CBCB"
+          fill="#643843"
           className="bi bi-person"
           viewBox="0 0 16 16"
           stroke="#643843"
@@ -23,11 +27,21 @@ function LoginModal() {
         </svg>
       </Button>
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton className="login-modal">
           <Modal.Title>Login</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="login-modal">
           <LoginForm />
+          <Row>
+            <Col>
+              <p className="signup-phrase">
+                Don't have an account yet? No worries,&nbsp;
+                <Link to={"/signup"} onClick={handleClose} className="Link">
+                  sign up here!
+                </Link>
+              </p>
+            </Col>
+          </Row>
         </Modal.Body>
       </Modal>
     </>

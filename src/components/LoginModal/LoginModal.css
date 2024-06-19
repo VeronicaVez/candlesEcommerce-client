@@ -1,0 +1,21 @@
+.loginButton {
+    background: none !important;
+    border: none !important
+}
+
+.signup-phrase{
+    color: #99627A;
+    padding:10px 0px;
+}
+
+.Link{
+    color:#643843;
+}
+
+.login-modal{
+    background-color: #E7CBCB;
+    color: #643843;
+    font-family: "Roboto";
+}
+
+

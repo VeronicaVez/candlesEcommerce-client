@@ -1,0 +1,22 @@
+.LoginForm{
+    background-color:#E7CBCB;
+    font-family: "Roboto";
+}
+
+.login-button{
+    background: #643843 !important;
+    border: #643843 !important;
+    margin-top: 20px;
+}
+
+.login-label{
+    margin: 10px 0px;
+}
+
+#inputEmail,
+#inputPassword{
+    transform: none !important;
+    box-shadow: none !important;
+    background: white !important;
+    border: none !important;
+}

@@ -1,6 +1,5 @@
 .NavBar {
     background-color: #E7CBCB;
-    display: inline-flex;
 }
 
 .modal-menu{
@@ -26,7 +25,7 @@
 }
     
 .NavBar a:hover {
-    font-weight: 700;
+    font-weight: 600;
     color: #643843;
     background-color: #E7CBCB;
 }
