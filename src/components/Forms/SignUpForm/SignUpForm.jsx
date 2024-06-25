@@ -4,7 +4,7 @@ import Col from "react-bootstrap/esm/Col"
 import Row from "react-bootstrap/esm/Row"
 import Button from "react-bootstrap/Button"
 import { useNavigate } from "react-router-dom"
-import authServices from "./../../../services/auth.services"
+import authServices from "./../../../services/auth.services.js"
 import "./SignUpForm.css"
 
 function SignupForm() {

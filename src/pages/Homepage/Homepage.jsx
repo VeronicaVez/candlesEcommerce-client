@@ -2,6 +2,8 @@ import leftPic from "./../../images/candles-home.webp"
 import rightPic from "./../../images/candles-relax.jpg"
 import handmade from "./../../images/handmade-candes.jpeg"
 import "./Homepage.css"
+import { Link } from "react-router-dom"
+import { Button } from "react-bootstrap"
 
 function Homepage() {
   return (
@@ -116,6 +118,19 @@ function Homepage() {
       </section>
       <section className="third-part">
         <h2>Products</h2>
+        <p>
+          Discover the warmth and charm of our exquisite soy candles,
+          meticulously crafted by hand with love and care. Each candle is made
+          from 100% natural soy wax, ensuring a clean and long-lasting burn that
+          fills your space with delightful aromas. Our handmade candles are not
+          only a treat for your senses but also an eco-friendly choice, perfect
+          for creating a cozy and inviting atmosphere in any room. Experience
+          the exceptional quality and unique touch of our artisanal soy candles
+          and add a touch of elegance to your home today.
+        </p>
+        <Button as={Link} to="/candles" className="products-button">
+          Check our candles
+        </Button>
       </section>
       <section className="fourth-part">
         <article className="delivery">

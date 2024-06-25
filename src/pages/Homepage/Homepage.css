@@ -95,7 +95,36 @@
 }
 
 .third-part {
-    background-color:#E7CBCB
+    background-color:#E7CBCB;
+    padding: 30px;
+}
+
+.third-part h2{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #643843;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.third-part a {
+    border:none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #643843;
+    font-family: "Dancing Script", cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.third-part a:hover {
+    font-weight: 600;
+    color: #643843;
+    background-color: white;
+    border: none;
 }
 
 .delivery{
@@ -125,6 +154,7 @@
         }
 
     .second-part{
+        margin-top: 40px;
             padding: 20px 40px;
         }
 
@@ -146,7 +176,22 @@
             align-items: flex-end;
         }
     
+    .third-part {
+        margin-top: 40px;
+        padding: 30px 30px;
+    }
+
+    .third-part h2{
+        padding:20px;
+        font-size: 3rem;
+    }
+
+    .third-part a {
+        margin-top: 30px;
+    }
+
     .fourth-part {
+        margin-top: 40px;
             display: flex;
             justify-content: space-around;
             align-items: center;

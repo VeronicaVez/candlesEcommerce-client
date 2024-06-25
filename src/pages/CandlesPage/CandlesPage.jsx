@@ -1,13 +1,21 @@
-import CandleCard from "./../../components/CandleCard/CandleCard"
-import { Row, Col } from "react-bootstrap"
-import { Container } from "react-bootstrap"
-import { useState } from "react"
+import CandleList from "./../../components/CandleList/CandleList"
+import { Button } from "react-bootstrap"
+import { useContext } from "react"
+import { AuthContext } from "../../context/auth.context"
 
 const CandlesPage = () => {
+  const { isLoggedIn, user } = useContext(AuthContext)
   return (
     <>
       <h1> Our candles</h1>
-      <CandleCard />
+      <CandleList />
+      {isLoggedIn &&
+        user.role ===
+          "admin"(
+            <Button as={Link} to="/candles/new-candle">
+              Add New Candle
+            </Button>
+          )}
     </>
   )
 }

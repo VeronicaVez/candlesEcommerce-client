@@ -34,6 +34,11 @@
     width:20%;
 }
 
+.logout {
+    text-decoration: none;
+    color: #643843;
+}
+
 @media screen and (min-width:992px) {
     .logo {
         width: 15%;
@@ -56,4 +61,8 @@
             align-items: center;
             margin-right: 20px;
         }
+    
+    .logout{
+        margin-top: -6px;
+    }
 }
