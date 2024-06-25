@@ -15,8 +15,8 @@ class CandleServices {
         return this.axiosApi.get(`/api/candles/${candleId}`)
     }
 
-    newCandle() {
-        return this.axiosApi.post(`/api/candles`)
+    createCandle(newCandle) {
+        return this.axiosApi.post(`/api/candles`, newCandle)
     }
 
     deleteCandle(candleId) { 

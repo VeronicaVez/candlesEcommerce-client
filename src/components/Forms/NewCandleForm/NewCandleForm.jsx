@@ -1,6 +1,9 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { AuthContext } from "./../../../context/auth.context"
-import candleServices from "../../../services/candle.services"
+import CandleServices from "../../../services/candle.services"
+import { useNavigate } from "react-router-dom"
+import { Form, Button } from "react-bootstrap"
+import uploadServices from "./../../../services/upload.services"
 
 function CandleForm() {
   const { user } = useContext(AuthContext)
@@ -20,8 +23,7 @@ function CandleForm() {
   const handleFormSubmit = (e) => {
     e.preventDefault()
 
-    candleServices
-      .newCandle(newCandle)
+    CandleServices.createCandle(newCandle)
       .then(() => navigate(`/candles`))
       .catch((err) => console.log(err))
   }
@@ -43,23 +45,68 @@ function CandleForm() {
     uploadServices
       .uploadimage(formData)
       .then((res) => {
-        setCoasterData({ ...coasterData, imageUrl: res.data.cloudinary_url })
+        setNewCandle({ ...newCandle, image: res.data.cloudinary_url })
+        setLoadingImg(false)
       })
       .catch((err) => console.log(err))
+    setLoadingImg(false)
   }
 
   return (
     <Form onSubmit={handleFormSubmit}>
-      <Form.Group className="mb-3" controlId="image">
+      <Form.Group className="mb-3">
         <Form.Control
           as="textarea"
           rows={1}
-          placeholder="Title"
+          placeholder="Name"
           onChange={handleChangeCandle}
-          value={newCandle.title}
-          name="title"
+          value={newCandle.name}
+          name="name"
         />
       </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Control
+          as="textarea"
+          rows={2}
+          placeholder="Description"
+          onChange={handleChangeCandle}
+          value={newCandle.description}
+          name="description"
+        />
+      </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Control
+          as="textarea"
+          rows={1}
+          placeholder="Price"
+          onChange={handleChangeCandle}
+          value={newCandle.price}
+          name="price"
+        />
+      </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Select
+          onChange={handleChangeCandle}
+          value={newCandle.aroma}
+          name="aroma"
+        >
+          <option value="Lavender">Lavender</option>
+          <option value="Rose">Rose</option>
+          <option value="Citrus">Citrus</option>
+          <option value="Berry">Berry</option>
+          <option value="Coco">Coco</option>
+          <option value="Cinnamon">Cinnamon</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="Coffee">Coffee</option>
+          <option value="Vanilla">Vanilla</option>
+        </Form.Select>
+      </Form.Group>
+      <Form.Group>
+        <Form.Control type="file" onChange={handleFileUpload} />
+      </Form.Group>
+      <Button type="submit" disabled={loadingImg}>
+        {loadingImg ? "Loading Image..." : "Create review"}
+      </Button>
     </Form>
   )
 }
