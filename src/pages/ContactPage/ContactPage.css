@@ -1,3 +1,14 @@
+.ContactPage {
+    padding: 20px 20px;
+}
+
+.ContactPage h1 {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+    font-size: 3.5rem;
+}
+
 .second-part{
     display: flex;
     justify-content: center;

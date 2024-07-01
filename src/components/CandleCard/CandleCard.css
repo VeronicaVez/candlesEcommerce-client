@@ -1,0 +1,57 @@
+.candle-card {
+    padding: 5px 0px;
+    margin: 5px 0px;
+    border: 1px solid #E7CBCB;
+}
+
+.link-class{
+    text-decoration: none;
+}
+
+.title-class{
+    color: #643843;
+    font-size: 1.4rem;
+    padding: 10px 0px;
+}
+
+.subtitle-class {
+    color: #643843;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.4rem;
+    padding: 5px 0px;
+}
+
+.text-class{
+    color: #99627A;
+    padding: 5px 0px;
+}
+
+.button-class {
+    padding: 5px 20px;
+    margin-top: 15px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #643843;
+    font-family: "Dancing Script", cursive;
+}
+
+.button-class:hover {
+    color: #643843;
+    background-color: white;
+    border: none;
+}
+
+
+@media screen and (min-width:834px) {
+    .candle-card {
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .candle-card {
+        height: 155vh;
+    }
+}
