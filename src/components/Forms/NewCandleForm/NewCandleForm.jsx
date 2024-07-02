@@ -4,6 +4,7 @@ import CandleServices from "../../../services/candle.services"
 import { useNavigate } from "react-router-dom"
 import { Form, Button } from "react-bootstrap"
 import uploadServices from "./../../../services/upload.services"
+import "./NewCandleForm.css"
 
 function CandleForm() {
   const { user } = useContext(AuthContext)
@@ -53,7 +54,7 @@ function CandleForm() {
   }
 
   return (
-    <Form onSubmit={handleFormSubmit}>
+    <Form onSubmit={handleFormSubmit} className="NewCandleForm">
       <Form.Group className="mb-3">
         <Form.Control
           as="textarea"
@@ -101,10 +102,14 @@ function CandleForm() {
           <option value="Vanilla">Vanilla</option>
         </Form.Select>
       </Form.Group>
-      <Form.Group>
-        <Form.Control type="file" onChange={handleFileUpload} />
+      <Form.Group className="mb-3">
+        <Form.Control
+          type="file"
+          onChange={handleFileUpload}
+          className="mb-3"
+        />
       </Form.Group>
-      <Button type="submit" disabled={loadingImg}>
+      <Button type="submit" disabled={loadingImg} className="button-class">
         {loadingImg ? "Loading Image..." : "Create review"}
       </Button>
     </Form>
