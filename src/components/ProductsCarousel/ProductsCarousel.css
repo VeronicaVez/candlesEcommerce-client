@@ -1,0 +1,58 @@
+.ProductsCarousel{
+    margin: 20px 0px;
+}
+
+.carousel-part {
+    border: none;
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-carousel{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-body{
+    background-color: #ffffff;
+    color: #643843;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.text1-carousel{
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+}
+
+.text2-carousel {
+    font-family: "Roboto", sans-serif;
+}
+
+.img-carousel{
+    box-shadow: rgba(153, 98, 122, 0.12) 0px 2px 4px 0px, rgba(153, 98, 122, 0.32) 0px 2px 16px 0px;
+}
+
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left{
+    background-color: rgba(100, 56, 67, 0.6);
+}
+
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+    background-color: rgba(100, 56, 67, 0.6);
+}
+
+@media screen and (min-width:992px) {
+    .carousel-part {
+            height: 70vh;
+    }
+    .card-carousel {
+            height: 70vh;
+    }
+}

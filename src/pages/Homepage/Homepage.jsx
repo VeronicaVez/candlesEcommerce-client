@@ -4,6 +4,7 @@ import handmade from "./../../images/handmade-candes.jpeg"
 import "./Homepage.css"
 import { Link } from "react-router-dom"
 import { Button } from "react-bootstrap"
+import CarouselList from "../../components/CarouselList/CarouselList"
 
 function Homepage() {
   return (
@@ -128,6 +129,7 @@ function Homepage() {
           the exceptional quality and unique touch of our artisanal soy candles
           and add a touch of elegance to your home today.
         </p>
+        <CarouselList />
         <Button as={Link} to="/candles" className="products-button">
           Check our candles
         </Button>
